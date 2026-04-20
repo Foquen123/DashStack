@@ -1,0 +1,28 @@
+.search-container {
+  display: flex;
+  background: var(--bg);
+  /* border: 0.6px solid var(--add-1); */
+  border-radius: 19px;
+  padding: 10px 15px;
+  /* width: 400px; */
+  align-items: center;
+  gap: 13px;
+  margin-right: auto;
+  /* margin-left: 76px; */
+  width: 100%;
+}
+.search-container svg path {
+  stroke: var(--text-secondary);
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+}
+.search-input {
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-primary);
+  width: 100%;
+}

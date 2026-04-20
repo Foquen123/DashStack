@@ -1,0 +1,77 @@
+{
+  "common": {
+    "search": "Search",
+    "showing": "Showing",
+    "of": "of",
+    "prevDate": "Prev. Date",
+    "nextDate": "Next Date",
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "chart": {
+      "title": "Sales Details",
+      "month": "Month"
+    },
+    "statCard": {
+      "downYesterday": "Down from yesterday",
+      "order": "Total Order",
+      "pending": "Total Pending",
+      "sales": "Total Sales",
+      "upLastWeek": "Up from past week",
+      "upYesterday": "Up from yesterday",
+      "user": "Total User"
+    }
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "favorites": "Favorites",
+    "inbox": "Inbox",
+    "orderList": "Order List"
+  },
+  "products": {
+    "sliderTitle": "Enjoy free home delivery in this summer",
+    "sliderDesc": "Designer Dresses - Pick from trendy Designer Dress.",
+    "getStarted": "Get Started",
+    "editBtn": "Edit Product"
+  },
+  "inbox": {
+    "compose": "Compose",
+    "createNewLabel": "Create New Label",
+    "myEmail": "My Email",
+    "inbox": "Inbox",
+    "starred": "Starred",
+    "sent": "Sent",
+    "draft": "Draft",
+    "spam": "Spam",
+    "important": "Important",
+    "bin": "Bin",
+    "label": "Label"
+  },
+  "orderList": {
+    "filterBy": "Filter By",
+    "date": "Date",
+    "orderType": "Order Type",
+    "orderStatus": "Order Status",
+    "resetFilter": "Reset Filter",
+    "id": "ID",
+    "name": "name",
+    "address": "address",
+    "type": "type",
+    "status": "status"
+  }
+}

@@ -1,0 +1,45 @@
+.dropdown {
+  width: fit-content;
+  border-radius: 26px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  flex-shrink: 0;
+
+  background-color: var(--primary);
+}
+
+.footer {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-top: 0.6px solid var(--secondary);
+}
+
+.footer-label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--text-primary), transparent 17%);
+}
+
+.apply-btn {
+  align-self: center;
+  max-width: fit-content;
+  padding: 9px 33px;
+  background-color: var(--accent);
+  color: #fff;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+
+@media (max-width: 920px){
+  
+
+}

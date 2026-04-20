@@ -1,0 +1,4 @@
+export interface IOrderType {
+  id: string;
+  name: string;
+}

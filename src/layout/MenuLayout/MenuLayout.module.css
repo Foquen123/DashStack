@@ -1,0 +1,73 @@
+.layout {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  background: var(--bg);
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.main {
+  /* width: 100%; */
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  flex-grow: 1;
+  /* overflow: hidden; */
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: max-content;
+}
+
+.content-inner {
+  /* overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-color: var(--text-primary);
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.overlay--open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: var(--text-primary);
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+/* @media (max-width: 700px) {
+  .content {
+    overflow: hidden;
+    overflow: auto;
+  }
+
+  .content-inner {
+    overflow: initial;
+    display: initial;
+    height: initial;
+  }
+} */

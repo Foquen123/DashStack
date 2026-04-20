@@ -1,0 +1,71 @@
+.embla {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(16px * -1);
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding-left: 16px;
+}
+
+.button {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: none;
+  background-color: var(--bg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-50%) scale(1.07);
+}
+
+.button--prev {
+  left: 24px;
+}
+.button--next {
+  right: 24px;
+}
+
+.button svg path {
+  fill: var(--text-primary);
+}
+
+.embla[data-slider-size="small"] .button--prev {
+  left: 14px;
+}
+.embla[data-slider-size="small"] .button--next {
+  right: 14px;
+}
+
+@media (max-width: 470px) {
+  .embla[data-slider-size="big"] .button--prev {
+    top: inherit;
+    bottom: 20px;
+  }
+  .embla[data-slider-size="big"] .button--next {
+    top: inherit;
+    bottom: 20px;
+  }
+}

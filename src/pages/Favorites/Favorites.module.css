@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  gap: 30px;
+  justify-content: left;
+}
+
+@media (max-width: 470px) {
+  .product-container {
+    grid-template-columns: repeat(1,  1fr); 
+  }
+}

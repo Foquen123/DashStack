@@ -1,0 +1,138 @@
+/* .calendar {
+  width: fit-content;
+  border-radius: 26px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  flex-shrink: 0;
+
+  background-color: var(--primary);
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 33px;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.buttons-container {
+  display: flex;
+  gap: 12px;
+}
+
+.control-button {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--secondary);
+}
+
+.control-button svg path {
+  fill: var(--text-primary);
+}
+
+.rdp-root {
+  background-color: var(--primary);
+  width: fit-content;
+  padding: 24px 22px;
+  border-top: 0.6px solid var(--secondary);
+  /* border-bottom: 0.6px solid var(--secondary); */
+}
+
+.rdp-selected {
+  background-color: var(--accent);
+  border-radius: 12px;
+}
+.rdp-selected .rdp-day_btn {
+  color: #fff;
+  opacity: 1;
+}
+
+.rdp-month_caption {
+  padding: 25px 31px;
+  display: none;
+}
+
+.rdp-nav {
+  display: none;
+}
+
+.rdp-day {
+  /* color: color-mix(in srgb, var(--text-primary), transparent 50%); */
+}
+
+.rdp-day_btn {
+  width: 40px;
+  height: 40px;
+  background: none;
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.rdp-weekdays {
+}
+
+.rdp-weekday {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 127%;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.rdp-weeks::before {
+  content: "";
+  display: table-row;
+  height: 10px;
+}
+
+/* .footer {
+  padding: 16px 31px 27px 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--text-primary), transparent 17%);
+}
+
+.apply-btn {
+  align-self: center;
+  max-width: fit-content;
+  padding: 9px 33px;
+  background-color: var(--accent);
+  color: #fff;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 6px;
+} */
+
+@media (max-width: 500px) {
+  .rdp-day_btn {
+    width: 30px;
+    height: 30px;
+  }
+  .rdp-root {
+    padding: 5px ;
+  }
+}

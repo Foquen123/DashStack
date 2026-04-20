@@ -1,0 +1,77 @@
+{
+  "common": {
+    "search": "Поиск",
+    "showing": "",
+    "of": "из",
+    "prevDate": "Пр. Дата", 
+    "nextDate": "Сл. Дата", 
+    "months": {
+      "january": "Январь",
+      "february": "Февраль",
+      "march": "Март",
+      "april": "Апрель",
+      "may": "Май",
+      "june": "Июнь",
+      "july": "Июль",
+      "august": "Август",
+      "september": "Сентябрь",
+      "october": "Октябрь",
+      "november": "Ноябрь",
+      "december": "Декабрь"
+    }
+  },
+  "dashboard": {
+    "title": "Панель управления",
+    "chart": {
+      "title": "Детали продаж",
+      "month": "Месяц"
+    },
+    "statCard": {
+      "downYesterday": "По сравнению со вчерашним днем",
+      "order": "Всего заказов",
+      "pending": "Всего в ожидании",
+      "sales": "Всего продаж",
+      "upLastWeek": "По сравнению с прошлой неделей",
+      "upYesterday": "По сравнению со вчерашним днем",
+      "user": "Всего пользователей"
+    }
+  },
+  "sidebar": {
+    "dashboard": "Панель управления",
+    "products": "Товары",
+    "favorites": "Избранное",
+    "inbox": "Сообщения",
+    "orderList": "Заказы"
+  },
+  "products": {
+    "sliderTitle": "Этим летом воспользуйтесь бесплатной доставкой на дом!",
+    "sliderDesc": "Дизайнерские платья — выберите модное дизайнерское платье.",
+    "getStarted": "Начать",
+    "editBtn": "Редактировать"
+  },
+  "inbox": {
+    "compose": "Написать",
+    "createNewLabel": "Создать Новую Метку",
+    "myEmail": "Почта",
+    "inbox": "Входящие",
+    "starred": "Избранное",
+    "sent": "Отправленные",
+    "draft": "Черновики",
+    "spam": "Спам",
+    "important": "Важное",
+    "bin": "Корзина",
+    "label": "Метки"
+  },
+  "orderList": {
+    "filterBy": "Фильтровать по",
+    "date": "Дата",
+    "orderType": "тип заказа",
+    "orderStatus": "Статус заказа",
+    "resetFilter": "Сбросить фильтры",
+    "id": "ID",
+    "name": "имя",
+    "address": "адрес",
+    "type": "тип",
+    "status": "статус"
+  }
+}

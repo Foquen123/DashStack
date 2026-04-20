@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* overflow-y: auto; */
+  height: 100%;
+  /* padding-right: 10px; */
+  /* overflow-x: hidden; */
+}
+
+.stat-container {
+  /* gap: 30px;
+  display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
+  gap: 20px;
+  /* justify-content: center; */
+  width: 100%;
+}
+
+.chart-container {
+  background-color: var(--primary);
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0 rgba(0, 0, 0, 0.05);
+  width: 100%;
+  padding: 35px;
+  overflow-x: auto;
+  /* overflow-y: hidden; */
+  /* display: flex; */
+  min-height: max-content;
+}
+
+.chart-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.chart-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 420px) {
+  .stat-container {
+    grid-template-columns: repeat(1,  1fr);
+  }
+}

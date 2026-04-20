@@ -1,0 +1,37 @@
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.label-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* background: none !important; */
+  border-radius: 1px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  display: none;
+}
+.label-checkbox:checked + .icon {
+  display: block;
+}
+
+.icon-star {
+  display: none;
+}

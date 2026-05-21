@@ -63,13 +63,13 @@ const router = createBrowserRouter([
     path: '*',
     element: <NotFound></NotFound>
   },
-]);
+], {basename: '/dashboard-app'});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
 
-      <RouterProvider router={router}></RouterProvider>
+      <RouterProvider  router={router}></RouterProvider>
     </ThemeProvider>
   </StrictMode>,
 );

@@ -5,8 +5,8 @@ import Search from '../../../components/Search/Search';
 import useCssVariable from '../../../hooks/useCssVariables';
 import EnFlag from '@/assets/enFlag.png';
 import RuFlag from '@/assets/ruFlag.png';
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 const LIGHT_ICON = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clipPath="url(#clip0_1216_17205)">
@@ -56,8 +56,7 @@ function Topbar() {
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState<boolean>(false);
 
   const { i18n } = useTranslation();
-  const [lang, setLang] = useState<Lang>(langs.find(i => i.code === i18n.language) || langs[0]);
-  console.log(i18n.language);
+  const [lang, setLang] = useState<Lang>(langs.find(i => i.code === i18n.language) || langs[1]);
   const changeLanguage = async (lang: 'en' | 'ru') => {
     await i18n.changeLanguage(lang);
   };
@@ -71,6 +70,10 @@ function Topbar() {
     changeLanguage(lang.code);
     setIsLangDropdownOpen(false);
   };
+
+  // useEffect(() => {
+
+  // }, [])
 
   return (
     <header className={styles['header']}>
@@ -108,7 +111,7 @@ function Topbar() {
           </div>
         </div>
         <div className={styles['user']}>
-          <img src="/avatar.png" alt="" />
+          <img src="/dashboard-app/avatar.png" alt="" />
           <div className={styles['user-info']}>
             <p className={styles['user-name']}>Moni Roy</p>
             <p className={styles['user-role']}>Admin</p>
